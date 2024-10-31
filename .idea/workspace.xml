@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99c66958-e168-4cae-bd98-86a46cdda7f6" name="Changes" comment="Sauce Demo Base Framework">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ElementUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/RunClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/RunClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sauce/demo/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +48,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.LoginPageTest.TestLoginPageFunctionality.executor": "Run",
+    "TestNG.LoginPageTest.TestLoginPageTitle.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/SauceDemo",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,37 +64,13 @@
       <recent name="C:\Users\Administrator\IdeaProjects\SauceDemo\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunClass">
-    <configuration name="Properties1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sauce.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LoginPageTest.TestLoginPageFunctionality">
     <configuration name="RunClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.RunClass" />
       <module name="SauceDemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sauce.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,20 +117,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginPageTest.TestLoginPageFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginPageTest" />
+      <option name="METHOD_NAME" value="TestLoginPageFunctionality" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.TestLoginPageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginPageTest" />
+      <option name="METHOD_NAME" value="TestLoginPageTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.RunClass" />
       <item itemvalue="Application.demo.Properties1" />
       <item itemvalue="Application.demo.SampleClass" />
-      <item itemvalue="Application.Properties1" />
-      <item itemvalue="Application.SampleClass" />
+      <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
+      <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
         <item itemvalue="Application.RunClass" />
+        <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
         <item itemvalue="Application.demo.Properties1" />
         <item itemvalue="Application.demo.SampleClass" />
-        <item itemvalue="Application.SampleClass" />
-        <item itemvalue="Application.Properties1" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730357581590</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Sauce Demo Base Framework">
+      <option name="closed" value="true" />
+      <created>1730365279551</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730365279551</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

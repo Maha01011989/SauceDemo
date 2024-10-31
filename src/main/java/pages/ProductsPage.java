@@ -12,6 +12,13 @@ public class ProductsPage {
     @FindBy(className = "title")
     private WebElement productsTitle;
 
+    @FindBy(xpath = "//button[@id='react-burger-menu-btn']")
+    private WebElement hamburgerMenu;
+
+    @FindBy(id = "logout_sidebar_link")
+    private WebElement logOut;
+
+
     public ProductsPage(WebDriver driver) {
         this.driver = driver;
         ele = new ElementUtils();
@@ -19,5 +26,13 @@ public class ProductsPage {
 
     public String getProdTitle() {
         return ele.getText(productsTitle);
+    }
+
+    public void clickMenu() {
+        ele.click(hamburgerMenu);
+    }
+
+    public void clickLogOut() {
+        ele.click(logOut);
     }
 }

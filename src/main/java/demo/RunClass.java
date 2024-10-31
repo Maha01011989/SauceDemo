@@ -16,16 +16,17 @@ public class RunClass {
         driver = browserDriverManager.getDriver(cp);
         driver.manage().window().maximize();
         browserDriverManager.launchApp(driver, cp);
-
         LoginPage lp = new LoginPage(driver);
-
         System.out.println(lp.getLogoText());
         System.out.println(lp.getCurrentUrl());
         System.out.println(lp.getPageTitle());
         pp = lp.login("standard_user", "secret_sauce");
         System.out.println(pp.getProdTitle());
+        Thread.sleep(5000);
+        pp.clickMenu();
+        Thread.sleep(5000);
+        pp.clickLogOut();
+        Thread.sleep(5000);
         browserDriverManager.closeDriver();
-
-
     }
 }
