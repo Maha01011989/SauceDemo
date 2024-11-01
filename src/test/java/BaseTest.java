@@ -3,6 +3,7 @@ import driver.BrowserDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import pages.LoginButton;
 import pages.LoginPage;
 import pages.ProductsPage;
 
@@ -16,6 +17,8 @@ public class BaseTest {
 
     LoginPage loginPage;
 
+    LoginPage loginPage1;
+
     ProductsPage proPage;
 
     @BeforeTest
@@ -26,6 +29,8 @@ public class BaseTest {
         driver.manage().window().maximize();
         browserDriverManager.launchApp(driver, configProp);
         loginPage = new LoginPage(driver);
+        loginPage1 = new LoginButton(driver);
+
     }
 
 

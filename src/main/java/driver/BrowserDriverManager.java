@@ -34,7 +34,8 @@ public class BrowserDriverManager {
     }
 
     public void closeDriver() {
-        driver.close();
+        if (driver != null)
+            driver.close();
     }
 
 }

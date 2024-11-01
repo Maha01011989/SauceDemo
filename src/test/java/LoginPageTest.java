@@ -29,6 +29,16 @@ public class LoginPageTest extends BaseTest {
     }
 
 
+    //2,3.Overriding and application
+    @Test(priority = 2)
+    public void TestOverriding() {
+        String loginlogo = loginPage.getText();
+        Assert.assertEquals(loginlogo, "Swag Labs", "Logo text is not displayed as expected");
+        String loginButton = loginPage1.getText();
+        Assert.assertEquals(loginButton, "Login", "Login Button text is not displayed as expected");
+    }
+
+
     @Test(dataProvider = "getValidUserData", priority = 2)
     public void TestLoginPageFunctionality(String username, String password) throws InterruptedException {
         proPage = loginPage.login(username, password);
