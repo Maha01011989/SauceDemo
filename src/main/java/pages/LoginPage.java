@@ -55,7 +55,13 @@ public class LoginPage {
 
 
     public ProductsPage login(String username, String password) {
+        if (!userName.getAttribute("value").isEmpty()) {
+            ele.clearValue(userName);
+        }
         ele.enterValue(userName, username);
+        if (!passWord.getAttribute("value").isEmpty()) {
+            ele.clearValue(passWord);
+        }
         ele.enterValue(passWord, password);
         ele.click(loginButton);
         return PageFactory.initElements(driver, ProductsPage.class);
