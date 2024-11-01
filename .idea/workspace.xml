@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99c66958-e168-4cae-bd98-86a46cdda7f6" name="Changes" comment="Sauce Demo Test Cases">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/JavaScriptUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/RunClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/RunClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +51,7 @@
     "TestNG.LoginPageTest.TestLoginLockedOutUser.executor": "Run",
     "TestNG.LoginPageTest.TestLoginPageFunctionality.executor": "Run",
     "TestNG.LoginPageTest.TestLoginPageTitle.executor": "Run",
+    "TestNG.LoginPageTest.TestLoginUserStorage.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/SauceDemo",
@@ -62,28 +66,13 @@
       <recent name="C:\Users\Administrator\IdeaProjects\SauceDemo\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest.TestLoginLockedOutUser">
+  <component name="RunManager" selected="TestNG.LoginPageTest.TestLoginUserStorage">
     <configuration name="RunClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.RunClass" />
       <module name="SauceDemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="demo.Properties1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="demo.Properties1" />
-      <module name="SauceDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,20 +127,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginPageTest.TestLoginUserStorage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginPageTest" />
+      <option name="METHOD_NAME" value="TestLoginUserStorage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.RunClass" />
-      <item itemvalue="Application.demo.Properties1" />
       <item itemvalue="TestNG.LoginPageTest.TestLoginLockedOutUser" />
       <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
       <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
+      <item itemvalue="TestNG.LoginPageTest.TestLoginUserStorage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginPageTest.TestLoginUserStorage" />
         <item itemvalue="TestNG.LoginPageTest.TestLoginLockedOutUser" />
         <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
         <item itemvalue="Application.RunClass" />
         <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
-        <item itemvalue="Application.demo.Properties1" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730382895610</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Sauce Demo Test Cases">
+      <option name="closed" value="true" />
+      <created>1730438993962</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730438993962</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

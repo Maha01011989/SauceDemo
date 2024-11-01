@@ -5,15 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.ElementUtils;
+import utils.JavaScriptUtil;
 
 public class LoginPage {
 
     WebDriver driver;
     ElementUtils ele;
+    JavaScriptUtil js;
+
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         ele = new ElementUtils();
+        js = new JavaScriptUtil(driver);
         PageFactory.initElements(driver, this);
     }
 
@@ -56,5 +60,15 @@ public class LoginPage {
         ele.click(loginButton);
         return PageFactory.initElements(driver, ProductsPage.class);
     }
+
+    public void setLocalStorage(String key, String value) {
+        js.setItemFromLocalStorage(key, value);
+    }
+
+    public String getLocalStorage(String key) {
+
+        return js.getItemFromLocalStorage(key);
+    }
+
 
 }

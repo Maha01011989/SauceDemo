@@ -50,4 +50,17 @@ public class LoginPageTest extends BaseTest {
         String actError = loginPage.getErrorText();
         Assert.assertEquals(actError, expErrorMessage, "Error message is not displayed as expected");
     }
+
+    @Test(dataProvider = "getValidUserData")
+    public void TestLoginUserStorage(String username, String password) throws InterruptedException {
+        loginPage.login(username, password);
+        loginPage.setLocalStorage("session-username", username);
+        System.out.println(loginPage.getLocalStorage("session-username"));
+        Thread.sleep(3000);
+        proPage.clickMenu();
+        Thread.sleep(3000);
+        proPage.clickLogOut();
+        Thread.sleep(3000);
+
+    }
 }

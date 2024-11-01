@@ -22,11 +22,9 @@ public class RunClass {
         System.out.println(lp.getPageTitle());
         pp = lp.login("standard_user", "secret_sauce");
         System.out.println(pp.getProdTitle());
-        Thread.sleep(5000);
-        pp.clickMenu();
-        Thread.sleep(5000);
-        pp.clickLogOut();
-        Thread.sleep(5000);
+
+
+
         browserDriverManager.closeDriver();
     }
 }
