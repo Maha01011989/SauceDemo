@@ -5,6 +5,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import pages.LoginPage;
 import pages.ProductsPage;
+import utils.ScreenshotUtil;
 
 public class BaseTest {
 
@@ -13,6 +14,8 @@ public class BaseTest {
     BrowserDriverManager browserDriverManager;
     LoginPage loginPage;
     ProductsPage proPage;
+    ScreenshotUtil ss;
+
 
     @BeforeTest
     public void init() throws Exception {
@@ -22,6 +25,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         browserDriverManager.launchApp(driver, configProp);
         loginPage = new LoginPage(driver);
+        ss=new ScreenshotUtil(driver);
 
     }
 

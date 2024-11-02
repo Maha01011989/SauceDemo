@@ -1,10 +1,12 @@
 import org.testng.Assert;
+import org.testng.ITestListener;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 
 public class LoginPageTest extends BaseTest {
-
 
     @DataProvider
     public Object[][] getValidUserData() {
@@ -23,20 +25,23 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test(priority = 1)
-    public void TestLoginPageTitle() {
+    public void TestLoginPageTitle() throws IOException {
         String loginTitle = loginPage.getPageTitle();
         Assert.assertEquals(loginTitle, "Swag Labs", "Application is not launched.Title is not displayed as expected");
+        //4.Screenshot Utility
+        ss.takeScreenshot("LoginPageTitle");
     }
 
 
     //2,3.Overriding and application
     @Test(priority = 2)
-    public void TestOverriding() {
+    public void TestOverriding() throws IOException {
         String[] text = loginPage.getText().split(",");
         String loginLogo = text[0];
         String loginButton = text[1];
         Assert.assertEquals(loginLogo, "Swag Labs", "Logo text is not displayed as expected");
         Assert.assertEquals(loginButton, "Login", "Login Button text is not displayed as expected");
+        ss.takeScreenshot("Overriding");
     }
 
 

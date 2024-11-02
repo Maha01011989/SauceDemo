@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="99c66958-e168-4cae-bd98-86a46cdda7f6" name="Changes" comment="Sauce Demo Test Cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/RunClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/RunClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" afterDir="false" />
     </list>
@@ -69,7 +66,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\SauceDemo\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest.TestOverriding">
+  <component name="RunManager" selected="TestNG.LoginPageTest.TestLoginPageTitle">
     <configuration name="RunClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.RunClass" />
       <module name="SauceDemo" />
@@ -126,11 +123,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest.TestLoginPageFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPageTest.TestLoginPageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LoginPageTest" />
-      <option name="METHOD_NAME" value="TestLoginPageFunctionality" />
+      <option name="METHOD_NAME" value="TestLoginPageTitle" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -152,18 +149,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.RunClass" />
+      <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
       <item itemvalue="TestNG.LoginPageTest.TestOverriding" />
       <item itemvalue="TestNG.LoginPageTest.TestLoginInvalidUser" />
       <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml" />
-      <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
         <item itemvalue="TestNG.LoginPageTest.TestOverriding" />
         <item itemvalue="Application.RunClass" />
         <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml" />
         <item itemvalue="TestNG.LoginPageTest.TestLoginInvalidUser" />
-        <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730480002987</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Sauce Demo Test Cases">
+      <option name="closed" value="true" />
+      <created>1730535737969</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730535737969</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
