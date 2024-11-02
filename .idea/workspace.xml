@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99c66958-e168-4cae-bd98-86a46cdda7f6" name="Changes" comment="Sauce Demo Test Cases">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/RunClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/RunClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/BrowserDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/BrowserDriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginButton.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" afterDir="false" />
@@ -38,33 +37,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Properties1.executor": "Run",
-    "Application.RunClass.executor": "Run",
-    "Application.SampleClass.executor": "Run",
-    "Application.demo.Properties1.executor": "Run",
-    "Application.demo.SampleClass.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml.executor": "Run",
-    "TestNG.LoginPageTest.TestLoginInvalidUser.executor": "Run",
-    "TestNG.LoginPageTest.TestLoginLockedOutUser.executor": "Run",
-    "TestNG.LoginPageTest.TestLoginPageFunctionality.executor": "Run",
-    "TestNG.LoginPageTest.TestLoginPageTitle.executor": "Run",
-    "TestNG.LoginPageTest.TestLoginUserStorage.executor": "Run",
-    "TestNG.LoginPageTest.TestOverriding.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/SauceDemo",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Properties1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SampleClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo.Properties1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo.SampleClass.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPageTest.TestLoginInvalidUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPageTest.TestLoginLockedOutUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPageTest.TestLoginPageFunctionality.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPageTest.TestLoginPageTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPageTest.TestLoginUserStorage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPageTest.TestOverriding.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/IdeaProjects/SauceDemo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\IdeaProjects\SauceDemo\src\main\java" />
@@ -225,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730468629048</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sauce Demo Test Cases">
+      <option name="closed" value="true" />
+      <created>1730480002987</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730480002987</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

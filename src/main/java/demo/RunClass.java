@@ -3,9 +3,7 @@ package demo;
 import config.ConfigProperties;
 import driver.BrowserDriverManager;
 import org.openqa.selenium.WebDriver;
-import pages.LoginButton;
 import pages.LoginPage;
-import pages.ProductsPage;
 
 public class RunClass {
 
@@ -18,8 +16,7 @@ public class RunClass {
         browserDriverManager.launchApp(driver, cp);
         LoginPage lp = new LoginPage(driver);
         System.out.println(lp.getText());
-        LoginPage lp1 = new LoginButton(driver);
-        System.out.println(lp1.getText());
+
         browserDriverManager.closeDriver();
     }
 }

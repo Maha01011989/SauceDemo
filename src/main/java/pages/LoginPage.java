@@ -8,7 +8,7 @@ import utils.JavaScriptUtil;
 
 import java.util.List;
 
-public class LoginPage implements WebElement{
+public class LoginPage implements WebElement {
 
     WebDriver driver;
     ElementUtils ele;
@@ -78,7 +78,7 @@ public class LoginPage implements WebElement{
 
     @Override
     public String getText() {
-        return loginPageLogo.getText();
+        return loginPageLogo.getText() + "," + loginButton.getAttribute("value");
     }
 
 
@@ -121,7 +121,6 @@ public class LoginPage implements WebElement{
     public boolean isEnabled() {
         return false;
     }
-
 
 
     @Override

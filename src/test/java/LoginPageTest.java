@@ -32,9 +32,10 @@ public class LoginPageTest extends BaseTest {
     //2,3.Overriding and application
     @Test(priority = 2)
     public void TestOverriding() {
-        String loginlogo = loginPage.getText();
-        Assert.assertEquals(loginlogo, "Swag Labs", "Logo text is not displayed as expected");
-        String loginButton = loginPage1.getText();
+        String[] text = loginPage.getText().split(",");
+        String loginLogo = text[0];
+        String loginButton = text[1];
+        Assert.assertEquals(loginLogo, "Swag Labs", "Logo text is not displayed as expected");
         Assert.assertEquals(loginButton, "Login", "Login Button text is not displayed as expected");
     }
 
