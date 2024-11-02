@@ -47,7 +47,6 @@ public class LoginPageTest extends BaseTest {
         proPage = loginPage.login(username, password);
         String productTitle = proPage.getProdTitle();
         Assert.assertEquals(productTitle, "Products", "Login is not successful");
-        Thread.sleep(3000);
         proPage.clickMenu();
         Thread.sleep(3000);
         proPage.clickLogOut();
