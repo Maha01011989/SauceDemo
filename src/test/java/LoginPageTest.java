@@ -1,5 +1,4 @@
 import org.testng.Assert;
-import org.testng.ITestListener;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -28,8 +27,7 @@ public class LoginPageTest extends BaseTest {
     public void TestLoginPageTitle() throws IOException {
         String loginTitle = loginPage.getPageTitle();
         Assert.assertEquals(loginTitle, "Swag Labs", "Application is not launched.Title is not displayed as expected");
-        //4.Screenshot Utility
-        ss.takeScreenshot("LoginPageTitle");
+
     }
 
 
@@ -41,7 +39,6 @@ public class LoginPageTest extends BaseTest {
         String loginButton = text[1];
         Assert.assertEquals(loginLogo, "Swag Labs", "Logo text is not displayed as expected");
         Assert.assertEquals(loginButton, "Login", "Login Button text is not displayed as expected");
-        ss.takeScreenshot("Overriding");
     }
 
 
