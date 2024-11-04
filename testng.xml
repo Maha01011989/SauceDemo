@@ -6,11 +6,11 @@
             <class name="LoginPageTest"/>
         </classes>
     </test>
-
-    <!--    <test name="Regression1">-->
-    <!--        <classes>-->
-    <!--            <class name="test.sample.ParameterSample"/>-->
-    <!--            <class name="test.sample.ParameterTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="ProductPage">
+        <parameter name="name" value="standard_user"/>
+        <parameter name="pass" value="secret_sauce"/>
+        <classes>
+            <class name="ProductPageTest"/>
+        </classes>
+    </test>
 </suite>

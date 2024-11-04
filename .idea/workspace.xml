@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c66958-e168-4cae-bd98-86a46cdda7f6" name="Changes" comment="Sauce Demo Screenshot and Extent report">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductDetailPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductPageTest.java" afterDir="false" />
+    <list default="true" id="99c66958-e168-4cae-bd98-86a46cdda7f6" name="Changes" comment="Product page and detail page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ElementUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ElementUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="TestNG" name="$PROJECT_DIR$/testng.xml" />
+    </enabled-run-configurations>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -54,6 +62,7 @@
     &quot;TestNG.LoginPageTest.TestLoginUserStorage.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginPageTest.TestOverriding.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginPageTest.VerifyLoginPageTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProductPageTest.VerifyProductsPageTitle.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/IdeaProjects/SauceDemo&quot;,
@@ -68,7 +77,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\SauceDemo\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest.VerifyLoginPageTitle">
+  <component name="RunManager" selected="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,18 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest.TestOverriding" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginPageTest" />
-      <option name="METHOD_NAME" value="TestOverriding" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginPageTest.VerifyLoginPageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -138,20 +135,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductPageTest.VerifyProductsPageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductPageTest" />
+      <option name="METHOD_NAME" value="VerifyProductsPageTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="TestNG.ProductPageTest.VerifyProductsPageTitle" />
       <item itemvalue="TestNG.LoginPageTest.VerifyLoginPageTitle" />
       <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
-      <item itemvalue="TestNG.LoginPageTest.TestOverriding" />
       <item itemvalue="TestNG.LoginPageTest.TestLoginInvalidUser" />
       <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginPageTest.VerifyLoginPageTitle" />
         <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml" />
+        <item itemvalue="TestNG.ProductPageTest.VerifyProductsPageTitle" />
+        <item itemvalue="TestNG.LoginPageTest.VerifyLoginPageTitle" />
         <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
         <item itemvalue="TestNG.LoginPageTest.TestLoginInvalidUser" />
-        <item itemvalue="TestNG.LoginPageTest.TestOverriding" />
       </list>
     </recent_temporary>
   </component>
@@ -276,13 +285,22 @@
       <option name="project" value="LOCAL" />
       <updated>1730710797705</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Product page and detail page">
+      <option name="closed" value="true" />
+      <created>1730721719868</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730721719869</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sauce Demo Base Framework" />
     <MESSAGE value="Sauce Demo Test Cases" />
     <MESSAGE value="Sauce Demo Screenshot and Extent report" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sauce Demo Screenshot and Extent report" />
+    <MESSAGE value="Product page and detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product page and detail page" />
   </component>
 </project>
