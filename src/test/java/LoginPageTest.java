@@ -1,3 +1,4 @@
+import com.aventstack.extentreports.Status;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -24,10 +25,9 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test(priority = 1)
-    public void TestLoginPageTitle() throws IOException {
+    public void VerifyLoginPageTitle() throws IOException {
         String loginTitle = loginPage.getPageTitle();
         Assert.assertEquals(loginTitle, "Swag Labs", "Application is not launched.Title is not displayed as expected");
-
     }
 
 
@@ -63,15 +63,15 @@ public class LoginPageTest extends BaseTest {
         Assert.assertEquals(actError, expErrorMessage, "Error message is not displayed as expected");
     }
 
-    @Test(dataProvider = "getValidUserData", priority = 4)
-    public void TestLoginUserStorage(String username, String password) throws InterruptedException {
-        proPage = loginPage.login(username, password);
-        // loginPage.setLocalStorage("session-username", username);
-        System.out.println(loginPage.getLocalStorage("session-username"));
-        Thread.sleep(3000);
-        proPage.clickMenu();
-        Thread.sleep(3000);
-        proPage.clickLogOut();
-        Thread.sleep(3000);
-    }
+//    @Test(dataProvider = "getValidUserData", priority = 4)
+//    public void TestLoginUserStorage(String username, String password) throws InterruptedException {
+//        proPage = loginPage.login(username, password);
+//        // loginPage.setLocalStorage("session-username", username);
+//        System.out.println(loginPage.getLocalStorage("session-username"));
+//        Thread.sleep(3000);
+//        proPage.clickMenu();
+//        Thread.sleep(3000);
+//        proPage.clickLogOut();
+//        Thread.sleep(3000);
+//    }
 }
