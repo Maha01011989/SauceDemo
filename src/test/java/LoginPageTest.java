@@ -56,6 +56,7 @@ public class LoginPageTest extends BaseTest {
         Assert.assertEquals(loginTitle, AppConstants.LOGIN_PAGE_TITLE);
     }
 
+    //Negative Scenario
     @Test(dataProvider = "getInvalidUserData", priority = 4)
     public void TestLoginInvalidUser(String username, String password, String expErrorMessage) {
         loginPage.login(username, password);
