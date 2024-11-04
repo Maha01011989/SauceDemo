@@ -27,7 +27,7 @@ public class LoginPageTest extends BaseTest {
     @Test(priority = 1)
     public void VerifyLoginPageTitle() throws IOException {
         String loginTitle = loginPage.getPageTitle();
-        Assert.assertEquals(loginTitle, "Swag Labs", "Application is not launched.Title is not displayed as expected");
+        Assert.assertEquals(loginTitle, "Swag Labs1", "Application is not launched.Title is not displayed as expected");
     }
 
 

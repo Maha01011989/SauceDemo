@@ -1,4 +1,6 @@
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.Markup;
 import config.ConfigProperties;
 import driver.BrowserDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +26,10 @@ public class BaseTest {
 
     ExtentReportManager extentReportManager;
 
+    ExtentTest logger;
+
+    String ssPath;
+
     @BeforeTest
     public void init() throws Exception {
         configProp = new ConfigProperties();
@@ -42,16 +48,18 @@ public class BaseTest {
     @AfterMethod
     public void tearDown(ITestResult result) throws IOException {
         String methodName = result.getName();
-        ss.takeScreenshot(methodName);
+        ssPath = ss.getScreenshot(methodName);
+        logger = extentReportManager.getExtentTest(result.getName());
 
     }
 
     @AfterMethod
     public void testResult(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.SUCCESS) {
-            extentReportManager.getExtentTest(result.getName()).log(Status.PASS, "Test Case Passed");
+            logger.log(Status.PASS, "Test Case Passed");
         } else if (result.getStatus() == ITestResult.FAILURE) {
-            extentReportManager.getExtentTest(result.getName()).log(Status.FAIL, "Test Case Failed");
+            logger.log(Status.FAIL, "Test Case Failed");
+            //logger.fail("Test Case Failed.Snapshot is " + logger.addScreenCaptureFromPath(ssPath));
         }
     }
 

@@ -34,9 +34,9 @@ public class ExtentReportManager {
     }
 
 
-
     public ExtentTest getExtentTest(String testName) {
-        return getExtentReportsInstance().createTest(testName);
+        logger = getExtentReportsInstance().createTest(testName);
+        return logger;
     }
 
 
