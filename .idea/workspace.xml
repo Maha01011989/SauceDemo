@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="99c66958-e168-4cae-bd98-86a46cdda7f6" name="Changes" comment="Product page and detail page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ElementUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ElementUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductDetailPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\SauceDemo\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml">
+  <component name="RunManager" selected="TestNG.LoginPageTest.TestLoginPageFunctionality">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +98,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest.TestLoginInvalidUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPageTest.TestLoginPageFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LoginPageTest" />
-      <option name="METHOD_NAME" value="TestLoginInvalidUser" />
+      <option name="METHOD_NAME" value="TestLoginPageFunctionality" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,19 +147,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
       <item itemvalue="TestNG.ProductPageTest.VerifyProductsPageTitle" />
       <item itemvalue="TestNG.LoginPageTest.VerifyLoginPageTitle" />
       <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
-      <item itemvalue="TestNG.LoginPageTest.TestLoginInvalidUser" />
       <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
         <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml" />
         <item itemvalue="TestNG.ProductPageTest.VerifyProductsPageTitle" />
         <item itemvalue="TestNG.LoginPageTest.VerifyLoginPageTitle" />
         <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
-        <item itemvalue="TestNG.LoginPageTest.TestLoginInvalidUser" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730721719869</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Product page and detail page">
+      <option name="closed" value="true" />
+      <created>1730727855027</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730727855027</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

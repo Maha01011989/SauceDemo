@@ -1,9 +1,8 @@
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pages.LoginPage;
+
 
 public class ProductPageTest extends BaseTest {
 

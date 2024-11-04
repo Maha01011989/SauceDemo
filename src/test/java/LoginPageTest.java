@@ -1,7 +1,6 @@
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
 
 
@@ -41,36 +40,23 @@ public class LoginPageTest extends BaseTest {
     }
 
 
-    @Test(dataProvider = "getValidUserData", priority = 2)
+    @Test(dataProvider = "getValidUserData", priority = 3)
     public void TestLoginPageFunctionality(String username, String password) throws InterruptedException {
         proPage = loginPage.login(username, password);
+        loginPage.setLocalStorage("session-username", username);
         String productTitle = proPage.getProdTitle();
         Assert.assertEquals(productTitle, "Products", "Login is not successful");
+        Assert.assertEquals(username,loginPage.getLocalStorage("session-username"),"Session user name is not as expected");
         proPage.clickMenu();
-        Thread.sleep(3000);
         proPage.clickLogOut();
-        Thread.sleep(3000);
         String loginTitle = loginPage.getPageTitle();
-        Thread.sleep(3000);
         Assert.assertEquals(loginTitle, "Swag Labs", "Logout is not successful");
     }
 
-    @Test(dataProvider = "getInvalidUserData", priority = 3)
+    @Test(dataProvider = "getInvalidUserData", priority = 4)
     public void TestLoginInvalidUser(String username, String password, String expErrorMessage) {
         loginPage.login(username, password);
         String actError = loginPage.getErrorText();
         Assert.assertEquals(actError, expErrorMessage, "Error message is not displayed as expected");
     }
-
-//    @Test(dataProvider = "getValidUserData", priority = 4)
-//    public void TestLoginUserStorage(String username, String password) throws InterruptedException {
-//        proPage = loginPage.login(username, password);
-//        // loginPage.setLocalStorage("session-username", username);
-//        System.out.println(loginPage.getLocalStorage("session-username"));
-//        Thread.sleep(3000);
-//        proPage.clickMenu();
-//        Thread.sleep(3000);
-//        proPage.clickLogOut();
-//        Thread.sleep(3000);
-//    }
 }

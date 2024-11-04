@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.ElementUtils;
 import utils.JavaScriptUtil;
+import utils.WaitUtil;
 
 import java.util.List;
 
@@ -13,6 +14,8 @@ public class ProductsPage {
 
     WebDriver driver;
     ElementUtils ele;
+
+    WaitUtil waitUtil;
 
     @FindBy(className = "title")
     private WebElement productsTitle;
@@ -44,7 +47,7 @@ public class ProductsPage {
     public ProductsPage(WebDriver driver) {
         this.driver = driver;
         ele = new ElementUtils();
-
+        waitUtil = new WaitUtil(driver);
     }
 
     public String getProdTitle() {
@@ -52,11 +55,12 @@ public class ProductsPage {
     }
 
     public void clickMenu() {
-        ele.click(hamburgerMenu);
+        waitUtil.clickWhenReady(hamburgerMenu,5);
     }
 
-    public void clickLogOut() {
-        ele.click(logOut);
+    public void clickLogOut()
+    {
+        waitUtil.clickWhenReady(logOut,5);
     }
 
 //    public void clickProductName(String productName) {

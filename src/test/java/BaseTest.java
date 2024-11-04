@@ -12,6 +12,7 @@ import pages.LoginPage;
 import pages.ProductsPage;
 import utils.ExtentReportManager;
 import utils.ScreenshotUtil;
+import utils.WaitUtil;
 
 import java.io.IOException;
 
@@ -30,6 +31,7 @@ public class BaseTest {
 
     String ssPath;
 
+
     @BeforeTest
     public void init() throws Exception {
         configProp = new ConfigProperties();
@@ -41,6 +43,8 @@ public class BaseTest {
         ss = new ScreenshotUtil(driver);
         extentReportManager = new ExtentReportManager();
         extentReportManager.startReport();
+
+
 
 
     }
