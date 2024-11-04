@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="99c66958-e168-4cae-bd98-86a46cdda7f6" name="Changes" comment="Product page and detail page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProductPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\SauceDemo\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest.TestLoginPageFunctionality">
+  <component name="RunManager" selected="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,8 +153,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
         <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/SauceDemo/testng.xml" />
+        <item itemvalue="TestNG.LoginPageTest.TestLoginPageFunctionality" />
         <item itemvalue="TestNG.ProductPageTest.VerifyProductsPageTitle" />
         <item itemvalue="TestNG.LoginPageTest.VerifyLoginPageTitle" />
         <item itemvalue="TestNG.LoginPageTest.TestLoginPageTitle" />
@@ -300,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730727855027</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Product page and detail page">
+      <option name="closed" value="true" />
+      <created>1730733323869</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1730733323870</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

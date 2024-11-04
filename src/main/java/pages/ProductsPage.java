@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,7 +33,7 @@ public class ProductsPage {
     @FindBy(xpath = "//button[text()='Remove']")
     private WebElement removeButton;
 
-    @FindBy(xpath = "//*[text()='Name']/parent::a/parent::div/following-sibling::div/button")
+    @FindBy(id = "add-to-cart-sauce-labs-backpack")
     private WebElement addToCartButton;
 
     @FindBy(id = "logout_sidebar_link")
@@ -55,12 +56,11 @@ public class ProductsPage {
     }
 
     public void clickMenu() {
-        waitUtil.clickWhenReady(hamburgerMenu,5);
+        waitUtil.clickWhenReady(hamburgerMenu, 5);
     }
 
-    public void clickLogOut()
-    {
-        waitUtil.clickWhenReady(logOut,5);
+    public void clickLogOut() {
+        waitUtil.clickWhenReady(logOut, 5);
     }
 
 //    public void clickProductName(String productName) {
@@ -71,9 +71,22 @@ public class ProductsPage {
 //        }
 //    }
 
-    public void clickAddToCart(String productName) {
-        String element = addToCartButton.toString().replace("Name", productName);
-        WebElement element1 = driver.findElement(By.xpath(element));
-        element1.click();
+    public void clickAddToCart() {
+        ele.click(addToCartButton);
+
+    }
+
+    public void clickRemove() {
+        ele.click(removeButton);
+
+    }
+
+
+    public String getItemCountInCart() {
+        try {
+            return cartBadge.getText();
+        } catch (NoSuchElementException e) {
+            return "0";
+        }
     }
 }
