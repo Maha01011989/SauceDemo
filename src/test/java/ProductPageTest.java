@@ -30,7 +30,7 @@ public class ProductPageTest extends BaseTest {
     public void VerifyRemoveFromCart() {
         proPage.clickRemove();
         String count = proPage.getItemCountInCart();
-        Assert.assertEquals(count, "0", "Add to cart is not successful");
+        Assert.assertEquals(count, "0", "Remove from cart is not successful");
     }
 
 }
