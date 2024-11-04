@@ -5,9 +5,7 @@ import config.ConfigProperties;
 import driver.BrowserDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 import pages.LoginPage;
 import pages.ProductsPage;
 import utils.ExtentReportManager;
@@ -31,7 +29,6 @@ public class BaseTest {
 
     String ssPath;
 
-
     @BeforeTest
     public void init() throws Exception {
         configProp = new ConfigProperties();
@@ -43,9 +40,6 @@ public class BaseTest {
         ss = new ScreenshotUtil(driver);
         extentReportManager = new ExtentReportManager();
         extentReportManager.startReport();
-
-
-
 
     }
 
@@ -59,6 +53,7 @@ public class BaseTest {
 
     @AfterMethod
     public void testResult(ITestResult result) throws IOException {
+
         if (result.getStatus() == ITestResult.SUCCESS) {
             logger.log(Status.PASS, "Test Case Passed");
         } else if (result.getStatus() == ITestResult.FAILURE) {
@@ -69,10 +64,8 @@ public class BaseTest {
 
 
     @AfterTest
-    public void teardown() throws Exception {
+    public void teardown() {
         browserDriverManager.closeDriver();
         extentReportManager.endReport();
     }
-
-
 }
