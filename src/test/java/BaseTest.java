@@ -1,3 +1,4 @@
+import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.Markup;
@@ -28,13 +29,8 @@ public class BaseTest {
     ExtentTest logger;
 
     String ssPath;
+    ExtentReports reports;
 
-    @BeforeSuite
-    public void startReport()
-    {
-        extentReportManager = new ExtentReportManager();
-        extentReportManager.startReport();
-    }
 
     @BeforeTest
     public void init() throws Exception {
@@ -46,7 +42,8 @@ public class BaseTest {
         loginPage = new LoginPage(driver);
         ss = new ScreenshotUtil(driver);
         extentReportManager = new ExtentReportManager();
-        extentReportManager.startReport();
+        reports = extentReportManager.startReport();
+
 
     }
 
@@ -79,5 +76,7 @@ public class BaseTest {
     @AfterSuite
     public void closeReport() {
         extentReportManager.endReport();
+
     }
+
 }
