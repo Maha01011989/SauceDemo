@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import constants.Config;
+import constants.Report;
 
 public class ExtentReportManager {
 
@@ -16,12 +17,14 @@ public class ExtentReportManager {
     CommonUtils commonUtils = new CommonUtils();
 
     public void startReport() {
-        setExtentReportsInstance();
-        spark = new ExtentSparkReporter(Config.EXTENTREPORTPATH + commonUtils.getDateFormat() + ".html");
-        getExtentReportsInstance().attachReporter(spark);
-        spark.config().setTheme(Theme.DARK);
-        spark.config().setDocumentTitle("Sauce Demo");
-        spark.config().setReportName("Sauce Demo Test Report");
+        if (reports == null) {
+            setExtentReportsInstance();
+            spark = new ExtentSparkReporter(Report.REPORT_FOLDER + commonUtils.getDateFormat() + ".html");
+            getExtentReportsInstance().attachReporter(spark);
+            spark.config().setTheme(Report.DEFAULT_THEME);
+            spark.config().setDocumentTitle(Report.REPORT_TITLE);
+            spark.config().setReportName(Report.REPORT_NAME);
+        }
 
     }
 

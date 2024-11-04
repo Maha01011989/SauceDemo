@@ -29,6 +29,13 @@ public class BaseTest {
 
     String ssPath;
 
+    @BeforeSuite
+    public void startReport()
+    {
+        extentReportManager = new ExtentReportManager();
+        extentReportManager.startReport();
+    }
+
     @BeforeTest
     public void init() throws Exception {
         configProp = new ConfigProperties();
@@ -66,6 +73,11 @@ public class BaseTest {
     @AfterTest
     public void teardown() {
         browserDriverManager.closeDriver();
+
+    }
+
+    @AfterSuite
+    public void closeReport() {
         extentReportManager.endReport();
     }
 }
