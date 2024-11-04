@@ -42,6 +42,7 @@ public class LoginPageTest extends BaseTest {
     }
 
 
+    //1.Local Storage Check
     @Test(dataProvider = "getValidUserData", priority = 3)
     public void TestLoginPageFunctionality(String username, String password) {
         proPage = loginPage.login(username, password);
