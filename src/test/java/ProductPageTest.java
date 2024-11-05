@@ -34,4 +34,12 @@ public class ProductPageTest extends BaseTest {
         Assert.assertEquals(count, "0");
     }
 
+    @Test(priority = 4)
+    public void VerifyCartLinkPageLoad() {
+        proPage.clickAddToCart();
+        cartPage = proPage.clickShoppingCartLink();
+        String cartTitle = proPage.getProdTitle();
+        Assert.assertEquals(cartTitle, AppConstants.CART_PAGE_TITLE);
+    }
+
 }

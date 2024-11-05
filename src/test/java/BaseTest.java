@@ -7,6 +7,7 @@ import driver.BrowserDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import pages.CartPage;
 import pages.LoginPage;
 import pages.ProductsPage;
 import utils.ExtentReportManager;
@@ -22,6 +23,8 @@ public class BaseTest {
     BrowserDriverManager browserDriverManager;
     LoginPage loginPage;
     ProductsPage proPage;
+
+    CartPage cartPage;
     ScreenshotUtil ss;
 
     ExtentReportManager extentReportManager;

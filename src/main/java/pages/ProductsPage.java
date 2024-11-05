@@ -5,6 +5,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import utils.ElementUtils;
 import utils.JavaScriptUtil;
 import utils.WaitUtil;
@@ -73,6 +74,12 @@ public class ProductsPage {
 
     public void clickAddToCart() {
         ele.click(addToCartButton);
+
+    }
+
+    public CartPage clickShoppingCartLink() {
+        ele.click(cartLink);
+        return PageFactory.initElements(driver,CartPage.class);
 
     }
 
